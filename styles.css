@@ -1,93 +1,92 @@
-/* styles.css */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-  }
-  
-  header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  header .cta-button {
-    background-color: white;
-    color: #4CAF50;
-    padding: 10px 20px;
-    font-size: 18px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-  }
-  
-  header .cta-button:hover {
-    background-color: #45a049;
-  }
-  
-  .features-section, .testimonials-section, .cta-section {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #fff;
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
-  
-  .feature-cards, .testimonial-cards {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-  }
-  
-  .feature-card, .testimonial-card {
-    background-color: #f1f1f1;
-    padding: 20px;
-    border-radius: 8px;
-    width: 280px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .feature-card h3, .testimonial-card p {
-    margin-bottom: 10px;
-  }
-  
-  .testimonial-card span {
-    font-weight: bold;
-    color: #555;
-  }
-  
-  .cta-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 30px;
-    font-size: 18px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-  }
-  
-  .cta-button:hover {
-    background-color: #45a049;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-    margin-top: 30px;
-  }
-  
-  footer p {
-    margin: 0;
-  }
-  
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.features-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.feature-card {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card h3 {
+  margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.header-content {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.feature-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Chatbot Hint (Arrow + Text) */
+#chatbot-hint {
+  position: fixed;
+  bottom: 80px; /* Above chatbot button */
+  right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+  color: #4CAF50;
+  background: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  animation: bounce 1.5s infinite;
+  cursor: pointer;
+}
+
+#chatbot-arrow {
+  font-size: 20px;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}

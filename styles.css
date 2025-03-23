@@ -6,20 +6,55 @@ body {
   color: #333;
 }
 
+/* Header Section */
 header {
   background-color: #4CAF50;
   color: white;
   padding: 50px 20px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
+/* Header Content (Image + Text) */
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 900px;
+  width: 100%;
+}
+
+/* Smaller Header Image, Aligned Left */
+.header-image {
+  width: 150px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Header Text */
+.header-text {
+  max-width: 500px;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.header-text p {
+  margin: 5px 0 0;
+  font-size: 18px;
+}
+
+/* Features Section */
 .features-section {
   text-align: center;
   padding: 40px 20px;
   background-color: #fff;
-  margin: 20px 0;
+  margin: 20px auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
 }
 
 h2 {
@@ -40,19 +75,18 @@ h2 {
   border-radius: 8px;
   width: 280px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Feature Icons */
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
 }
 
 .feature-card h3 {
   margin-bottom: 10px;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.header-content {
-  animation: fadeIn 1.5s ease-in-out;
 }
 
 .feature-card {
@@ -64,26 +98,28 @@ h2 {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Chatbot Hint (Arrow + Text) */
+/* Chatbot Hint */
 #chatbot-hint {
   position: fixed;
-  bottom: 80px; /* Above chatbot button */
+  bottom: 80px;
   right: 30px;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 8px;
   font-size: 16px;
   color: #4CAF50;
   background: white;
-  padding: 5px 10px;
+  padding: 8px 12px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   animation: bounce 1.5s infinite;
   cursor: pointer;
 }
 
-#chatbot-arrow {
-  font-size: 20px;
+/* Chatbot Hint Icon */
+.chatbot-hint-icon {
+  width: 30px;
+  height: 30px;
 }
 
 @keyframes bounce {

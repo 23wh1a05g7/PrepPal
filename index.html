@@ -9,7 +9,7 @@
 <body>
   <header>
     <div class="header-content">
-      <img src="https://23wh1a05g7.github.io/PrepPal/images/path-to-header-image.webp" alt="Interview Prep" class="header-image">
+      <img src="C:\Users\91879\Downloads\path-to-header-image.webp" alt="Interview Prep" class="header-image">
       <div class="header-text">
         <h1>Welcome to PrepPal</h1>
         <p>Your ultimate interview prep assistant!</p>
@@ -21,32 +21,28 @@
     <h2>Features</h2>
     <div class="feature-cards">
       <div class="feature-card">
-        <img src="https://23wh1a05g7.github.io/PrepPal/images/path-to-ai-icon.webp" alt="AI Icon" class="feature-icon">
+        <img src="C:\Users\91879\Downloads\path-to-ai-icon.webp" alt="AI Icon" class="feature-icon">
         <h3>AI-powered Responses</h3>
         <p>Get AI-generated answers for various interview questions.</p>
       </div>
       <div class="feature-card">
-        <img src="https://23wh1a05g7.github.io/PrepPal/images/path-to-domains-icon.webp" alt="Domains Icon" class="feature-icon">
+        <img src="C:\Users\91879\Downloads\path-to-domains-icon.webp" alt="Domains Icon" class="feature-icon">
         <h3>Supports Multiple Domains</h3>
         <p>Practice technical, aptitude, and other domains.</p>
       </div>
       <div class="feature-card">
-        <img src="https://23wh1a05g7.github.io/PrepPal/images/path-to-device-icon.webp" alt="Device Icon" class="feature-icon">
+        <img src="C:\Users\91879\Downloads\path-to-device-icon.webp" alt="Device Icon" class="feature-icon">
         <h3>Works on Any Device</h3>
         <p>Accessible from anywhere for a seamless experience.</p>
       </div>
     </div>
   </section>
 
-  <!-- Chatbot Hint -->
-  <div id="chatbot-hint">
-    <span>Try it out!</span>
-  </div>
-
-  <script src="script.js"></script>
-
   <!-- ChatLing AI Chatbot Integration -->
-  <script> window.chtlConfig = { chatbotId: "4824496137" } </script>
-  <script async data-id="4824496137" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
+  <script> 
+    window.chtlConfig = { chatbotId: "4824496137", display: "page_inline" }; 
+  </script>
+  <div id="chatling-inline-bot" style="width: 80%; height: 400px; margin: auto;"></div>
+  <script async data-id="4824496137" data-display="page_inline" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
 </body>
 </html>

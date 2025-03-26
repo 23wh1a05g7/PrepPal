@@ -97,32 +97,3 @@ h2 {
   transform: translateY(-10px);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
-
-/* Chatbot Hint */
-#chatbot-hint {
-  position: fixed;
-  bottom: 80px;
-  right: 30px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 16px;
-  color: #4CAF50;
-  background: white;
-  padding: 8px 12px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  animation: bounce 1.5s infinite;
-  cursor: pointer;
-}
-
-/* Chatbot Hint Icon */
-.chatbot-hint-icon {
-  width: 30px;
-  height: 30px;
-}
-
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
-}
